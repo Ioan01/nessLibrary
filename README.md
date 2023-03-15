@@ -1,5 +1,7 @@
-# Library api
+# Simple Library api
 ## Endpoints and cUrl
+#
+#
 - Add book
 ``
 curl --request POST \
@@ -10,6 +12,8 @@ curl --request POST \
 	"author" : "b"
 }'
 ``
+#
+#
 - Get all books
 ``
 curl --request POST \
@@ -20,6 +24,8 @@ curl --request POST \
 	"author" : "b"
 }'
 ``
+#
+#
 - Delete book
 ``
 curl --request POST \
@@ -30,11 +36,15 @@ curl --request POST \
 	"author" : "b"
 }'
 ``
+#
+#
 - Find books by title
 ``
 curl --request GET \
   --url 'http://localhost:8080/library/findBooksByTitle?title=a'
   ``
+#
+#
 - Update book author
 ``
 curl --request POST \
